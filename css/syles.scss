@@ -5,12 +5,10 @@ $background-pale: #D1C4E9;
 
 // Height variables
 $carousel-item-height: 300px;
-
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
-	margin:0px auto;
+	margin: 0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
-
 .row-header{
     @include zero-margin(0px,0px);
 }
@@ -18,7 +16,7 @@ $carousel-item-height: 300px;
 .row-content {
     @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
-    min-height:400px;
+    min-height: 400px;
 }
 
 .footer{
@@ -72,4 +70,12 @@ body{
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+.modal-header {
+    background: $background-dark;
+    color: $lt-gray;
+}
+.modal-body {
+    background: $background-light;
 }
